@@ -1,0 +1,21 @@
+<h1>Workspace</h1>
+<div>path: {{workspace['path']}}</div>
+<div>last modified: {{workspace['lastModified']}}</div>
+<table class="fileTable">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Modified</th>
+    <th>Version</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="entry in files['entries']" ng-Class-Even="'evenRow'">
+      <td ng-if="isFolderish(entry)"><a ng-href="#/workspace/{{entry.uid}}">{{entry.title}}</a></td>
+      <td ng-if="!isFolderish(entry)">{{entry.title}}</td>
+      <td>{{entry.lastModified}}</td>
+      <td>{{entry.versionLabel}}</td>
+    </tr>
+  </tbody>
+</table>
+<a href="/nuxeo/nxdoc/default/{{workspace['uid']}}/view_documents?tabIds=%3A&conversationId=0NXMAIN" target="_blank">Click here to see the same workspace in Nuxeo</a>

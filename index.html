@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>Nuxeo AngularJS</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular-route.js"></script>
+  <script src="app.js" type="text/javascript"></script>
+  <script src="create-document-controller.js" type="text/javascript"></script>
+  <script src="user-workspace-controller.js" type="text/javascript"></script>
+  <script src="default-workspace-controller.js" type="text/javascript"></script>
+</head>
+<body ng-app='NuxeoAngular'>
+  <div class='borderBox'>
+    <span><a href="#workspace">View Documents</a></span>
+    <span><a href="#create">Create Documents</a><span>
+  </div>
+  <div ng-view class='borderBox'></div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<div>This page lets you create a new document in default domain in the Administrator workspace.</div>
+<table>
+  <tr>
+    <td>Document Name:</td>
+    <td> <input type='text' ng-model='fileName' /> </td>
+  </tr>
+  <tr>
+    <td>Document Title:</td>
+    <td> <input type='text' ng-model='fileTitle' /> </td>
+  </tr>
+  <tr>
+    <td>Document Description:</td>
+    <td> <input type='text' ng-model='fileDescription' /> </td>
+  </tr>
+</table>
+<br/>
+<span>AngularJS automatically updates the DOM when you make changes</span>
+<ul>
+  <li>Name: {{fileName}}</li>
+  <li>Title: {{fileTitle}}</li>
+  <li>Description: {{fileDescription}}</li>
+</ul>
+<button ng-click='createDocument()'>Create the Document!</button>

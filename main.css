@@ -1,0 +1,18 @@
+.borderBox {
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.fileTable tr {
+  text-align: center;
+}
+
+.fileTable tr.evenRow {
+  background-color: gray;
+}
+
+.fileTable td {
+  padding: 0px 5px 0px 5px;
+}
